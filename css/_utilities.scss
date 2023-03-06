@@ -1,0 +1,72 @@
+@import 'variables';
+.container{
+    max-width:$max-width;
+    margin:auto;
+   padding:0 1rem;
+}
+//Shared button styling
+%btn-shared{
+display:inline-block;
+padding:0.5rem 1rem;
+color:#fff;
+font-size:18px;
+}
+
+.py-1{
+    padding:1rem 0;
+}
+.py-2{
+    padding:2rem 0;
+}
+.py-3{
+    padding:3rem 0;
+}
+.py-4{
+    padding:4rem 0;
+}
+.bottom-line{
+    width:100px;
+    height:5px;
+    background-color:$box-color;
+    margin: 1rem auto;
+
+}
+
+.btn{
+    &-blue{
+        @extend %btn-shared;
+        background-color:transparent;
+        color:#000;
+        font-weight:bold;
+        border:2px solid #000;
+        margin-top:1rem;
+        position:relative;
+        transition:all 0.4s ease-in-out;
+    }
+&-green{
+    @extend %btn-shared;
+    background-color:$green-color;
+transition:all 0.5s;
+border:none;
+cursor:pointer;
+&:hover{
+    background-color:darken($green-color, 12%);
+}
+}
+}
+
+.btn-blue:hover{
+    background-color:$main-color;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    font-family:'Roboto Condensed';
+}
+.lead{
+    font-size:18px;
+    text-align:center;
+    color:#333;
+    padding-bottom:2rem;
+}

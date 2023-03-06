@@ -1,0 +1,90 @@
+@media (max-width: 700px) {
+  #showcase {
+    height: 100vh;
+  }
+  #showcase .main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #showcase .main-nav #menu {
+    padding: 1rem;
+  }
+  #showcase .header-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #showcase .header-content img {
+    width: 200px;
+    margin-right: 0;
+  }
+  #showcase .header-content .header-text {
+    margin-top: 30px;
+    text-align: center;
+  }
+  #showcase .header-content .header-text h1:first-child {
+    font-size: 1rem;
+  }
+  #showcase .header-content .header-text h1:nth-child(2) {
+    font-size: 2.5rem;
+  }
+  #showcase .header-content .header-text .highlight {
+    font-size: 2rem;
+  }
+  #showcase .header-content .buttons {
+    margin-top: 5px;
+  }
+  .boxes-grid {
+    top: 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #home-c .gallery-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #home-c .gallery-grid .box:first-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/span 1;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    background-color: #fff;
+    grid-gap: 1rem;
+  }
+  #home-c .gallery-grid .box:first-child .box-content {
+    background-color: #2980b9;
+  }
+  #home-c .gallery-grid .box:last-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/span 1;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: #fff;
+  }
+  #home-c .gallery-grid .box:last-child .box-content {
+    background-color: #2980b9;
+  }
+  #home-c .box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    background-color: #fff;
+  }
+}
+/*# sourceMappingURL=media.css.map */
